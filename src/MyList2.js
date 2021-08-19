@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from 'react';
 
 function MyList2() {
     //console.log("MyList2")
-    const listRef = useRef([]);
+    //const listRef = useRef([]);
     let [value, setValue] = React.useState ('')    
     let [listed, setListed] = React.useState ([]) 
 
@@ -14,8 +14,8 @@ function MyList2() {
     const mySubmitHandler = (event) => {
         //console.log("mySubmitHandler")
         event.preventDefault();
-        listRef.current.push(value)
-        setListed([...listRef.current])
+        //listRef.current.push(value)
+        setListed([...listed, value])
     };
 
     let mlist = listed
